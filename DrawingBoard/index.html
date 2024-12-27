@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Drawing board</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="options">
+            <div class="colorDiv">
+                <div class="circle red" data-color="rgb(253, 45, 45)"></div>
+                <div class="circle green" data-color="lime"></div>
+                <div class="circle blue" data-color="dodgerblue"></div>
+            </div>
+
+            <div class="penIcon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3230/3230808.png" alt="pen logo">
+            </div>
+            
+            <div class="sliderContainer">
+                <input type="range" min="1" max="30" value="5" class="slider">
+            </div>
+
+            <div class="eraserIcon">
+                <img src="https://cdn-icons-png.flaticon.com/512/3219/3219014.png" alt="erasor logo">
+            </div>
+        </div>
+        <canvas></canvas>
+    </body>
+</html>

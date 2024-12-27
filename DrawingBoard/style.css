@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(36, 36, 36);
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+.options {
+    padding: 5px;
+    width: fit-content;
+    border-radius: 40px;
+    background-color: rgb(62, 62, 63);
+    display: flex;
+    gap: 7px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.colorDiv {
+    padding: 7px;
+    display: flex;
+    gap: 7px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.circle:hover {
+    transform: scale(1.1);
+}
+
+.circle:active {
+    transform: scale(0.9);
+}
+
+.sliderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    appearance: none;
+    height: 3px;
+    border-radius: 5px;
+    background-color: rgb(109, 182, 255);
+    cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    background-color: rgb(187, 230, 255);
+    border-radius: 50%;
+    transition: 0.1s;
+}
+
+.slider:active::-webkit-slider-thumb {
+    transform: scale(1.2);
+    height: 20px;
+    border-radius: 40px;
+}
+
+.slider:hover::-webkit-slider-thumb {
+    transform: scale(1.2);
+    width: 7px;
+    height: 20px;
+    border-radius: 40px;
+}
+
+.red {
+    background-color: rgb(253, 45, 45);
+}
+
+.green {
+    background-color: lime;
+}
+
+.blue {
+    background-color: dodgerblue;
+}
+
+.penIcon {
+    display: flex;
+    align-items: center;
+}
+
+.penIcon >img {
+    width: 20px;
+    object-fit: contain;
+}
+
+.eraserIcon {
+    margin: 0 7px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.eraserIcon >img {
+    width: 30px;
+    object-fit: contain;
+}
+
+.eraserIcon:hover {
+    transform: scale(1.2);
+}
+
+.eraserIcon:active {
+    transform: scale(0.9);
+}
